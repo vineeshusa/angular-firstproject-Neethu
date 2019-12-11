@@ -12,6 +12,8 @@ import { HotelsComponent } from './menu/home/hotels/hotels.component';
 import { FootrComponent } from './footr/footr.component';
 import { ImgComponent } from './img/img.component';
 import { HelpComponent } from './help/help.component';
+import { DateComponent } from './date/date.component';
+import { CarComponent } from './car/car.component';
 
 const myPath : Routes =[
   {
@@ -23,11 +25,14 @@ const myPath : Routes =[
   {
     path:"home",component:HomeComponent
   }
+  ,{
+    path:"car",component:CarComponent
+  }
 ]
 @NgModule({
   imports:      [ BrowserModule, FormsModule,
   RouterModule.forRoot(myPath) ],
-  declarations: [ AppComponent, HelloComponent, MenuComponent, HomeComponent, HotelsComponent, FootrComponent, ImgComponent, HelpComponent ],
+  declarations: [ AppComponent, HelloComponent, MenuComponent, HomeComponent, HotelsComponent, FootrComponent, ImgComponent, HelpComponent, DateComponent, CarComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
+import{ReactiveFormsModule}from'@angular/forms'
 import{RouterModule,Routes}  from'@angular/router';
 
 import { AppComponent } from './app.component';
@@ -34,7 +34,7 @@ const myPath : Routes =[
 ]
 @NgModule({
   imports:      [ BrowserModule, FormsModule,
-  RouterModule.forRoot(myPath) ],
+  RouterModule.forRoot(myPath),ReactiveFormsModule ],
   declarations: [ AppComponent, HelloComponent, MenuComponent, HomeComponent, HotelsComponent, FootrComponent, ImgComponent, HelpComponent, DateComponent, CarComponent, RegistrationComponent ],
   bootstrap:    [ AppComponent ]
 })

@@ -28,6 +28,8 @@ const myPath : Routes =[
   }
   ,{
     path:"car",component:CarComponent
+  },
+  {path:"registration",component:RegistrationComponent
   }
 ]
 @NgModule({

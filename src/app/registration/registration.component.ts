@@ -8,7 +8,8 @@ import {FormGroup,FormControl}from '@angular/forms';
 export class RegistrationComponent implements OnInit {
 registrationForm : FormGroup;
 save= function()
-{alert("saved");}
+{alert("saved");
+}
 
   constructor() { }
 

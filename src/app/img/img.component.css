@@ -1,5 +1,9 @@
 .nameimg{
   list-style: none;
-  background-color: antiquewhite;
-height: 1cm;
+  background-color: green;
+height:1cm;
+float: left;
+width: 3cm;
+text-align: center;
+color: white;
 }

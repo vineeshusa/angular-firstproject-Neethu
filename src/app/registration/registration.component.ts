@@ -24,4 +24,9 @@ this.registrationForm= new FormGroup({
 }
 );
   }
+  onSubmit():void
+  
+  {console.log(this.registrationForm.value);
+
+  }
   }

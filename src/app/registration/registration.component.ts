@@ -16,7 +16,7 @@ save= function()
   ngOnInit() {
   
 this.registrationForm= this.fb.group({
-  FullName:['',[ Validators.required , Validators.minLength,Validators.maxLength] ],
+  FullName:['',[ Validators.required , Validators.minLength (3),Validators.maxLength(12)] ],
   email: [''],
   DOB:[''],
   PassWord:['']

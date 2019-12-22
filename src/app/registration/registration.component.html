@@ -1,18 +1,23 @@
 <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()" class="form-reg">
-  <div class="formgp" [ngClass]="{'has-error': registrationForm.get('Fullname').errors && (registrationForm.get('FullName').touched|| registrationForm.get('FullName').dirty)}">
+   <div class="formgp" [ngClass]="{'has-error': registrationForm.get('FullName').errors && ((registrationForm.get('FullName').touched)|| (registrationForm.get('FullName').dirty))}">
 
-  <label class="reg" for="FullName">Full Name :  </label>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <input id="fullname" formControlName="FullName" type="text" class="reg1">
-  <span class="fulnamespn" *ngIf="registrationForm.get('FullName').errors && (registrationForm.get('Fullname').touched|| registrationForm.get('FullName').dirty)">
-    <span *ngIf="registrationForm.get('FullName').errors.required">
+            <label class="reg" for="FullName">Full Name :  </label>
+             &nbsp;&nbsp;&nbsp;&nbsp;
+  
+             <input id="fullname" formControlName="FullName" type="text" class="regtxt">
+       <span class="fulnamespn" *ngIf="registrationForm.get('FullName').errors && (registrationForm.get('FullName').touched|| registrationForm.get('FullName').dirty)">
+       <span *ngIf="registrationForm.get('FullName').errors.required">
+         <br>
       Full Name is required
-    </span>
-    <span *ngIf="registrationForm.get('FullName').errors.minlength||registrationForm.get('FullName').errors.maxlength">
-      Minimum 2 length and Maximum 10 length
-    </span>
-  </span>
+      </span> 
+       <span *ngIf="registrationForm.get('FullName').errors.minlength||registrationForm.get('FullName').errors.maxlength">
+         <br>
+      Minimum 3 length and Maximum 12 length
+      
+     </span>
+     </span>
 
+</div>
   <br>
   <br>
  <label class="reg" for="Email">Email :  </label>
@@ -30,4 +35,4 @@
   <br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <button id="regbtn" class="reg" type="submit" (click)= save();>save</button>
-  </div>
+</form>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -15,7 +16,9 @@ heading:string;
     this.heading="Search hundreds of travel sites at once.";
   }
 
-  ngOnInit() {
+  ngOnInit() 
+  {
+
   }
 
 }

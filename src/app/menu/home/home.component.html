@@ -1,13 +1,17 @@
-&nbsp;&nbsp;&nbsp;
 
-  <label for ="username">UserName :</label>
-  &nbsp;&nbsp;
-<input type="text" id="usernamet">
+<form [formGroup]="homeForm"(ngSubmit)="onSubmit()" class=form-reg>
+ 
+  <label class="home" for ="username">UserName :</label>
+  &nbsp;&nbsp;&nbsp;
+<input id="username "type="text" formControlName="userName" class="home1">
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <button id="sign" (click)= clickedsign();>Sign In</button>
 <br>
 <label for="password">Password :</label>
 &nbsp;&nbsp;&nbsp;&nbsp;
-<input type="text" id="password">
+<input type="password" id="password" formControlName="PassWord" class="passwd">
 <br>
 <br>
+</form>
+
+  

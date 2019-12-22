@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormGroup,FormControl}from '@angular/forms';
+import {FormGroup,FormBuilder,Validators}from '@angular/forms';
 @Component({
   selector: 'app-registration',
   templateUrl: './registration.component.html',
@@ -11,15 +11,15 @@ save= function()
 {alert("saved");
 }
 
-  constructor() { }
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
   
-this.registrationForm= new FormGroup({
-  FullName: new FormControl(),
-  email: new FormControl(),
-  DOB:new FormControl(),
-  PassWord:new FormControl()
+this.registrationForm= this.fb.group({
+  FullName:['',[ Validators.required , Validators.minLength,Validators.maxLength] ],
+  email: [''],
+  DOB:[''],
+  PassWord:['']
  
 }
 );

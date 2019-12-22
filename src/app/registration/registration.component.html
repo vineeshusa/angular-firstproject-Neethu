@@ -1,4 +1,4 @@
-<form [formGroup]="registrationForm" (ngSubmit)="onSubmit()" class=form-reg>
+<form [formGroup]="registrationForm" (ngSubmit)="onSubmit()" class="form-reg">
   <div class="formgp" [ngClass]="{'has-error': registrationForm.get('Fullname').errors && (registrationForm.get('FullName').touched|| registrationForm.get('FullName').dirty)}">
 
   <label class="reg" for="FullName">Full Name :  </label>

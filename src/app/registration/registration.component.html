@@ -2,7 +2,7 @@
    <div class="formgp" [ngClass]="{'has-error': registrationForm.get('FullName').errors && ((registrationForm.get('FullName').touched)|| (registrationForm.get('FullName').dirty))}">
 
             <label class="reg" for="FullName">Full Name :  </label>
-             &nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   
              <input id="fullname" formControlName="FullName" type="text" class="regtxt">
        <span class="fulnamespn" *ngIf="registrationForm.get('FullName').errors && (registrationForm.get('FullName').touched|| registrationForm.get('FullName').dirty)">
@@ -22,7 +22,7 @@
   <br>
   <div [ngClass]="{'has-error': registrationForm.get('email').errors && ((registrationForm.get('email').touched)|| (registrationForm.get('email').dirty))}">
      <label class="reg" for="email">Email :  </label>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="Emailtext" formControlName="email" type="text" class="reg1"> 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="Emailtext" formControlName="email" type="text" class="reg1"> 
   <span *ngIf="registrationForm.get('email').errors && (registrationForm.get('email').touched|| registrationForm.get('email').dirty)">
      
        <span *ngIf="registrationForm.get('email').errors.required">
@@ -36,6 +36,7 @@
   <br>
   <div [ngClass]="{'has-error': registrationForm.get('DOB').errors && ((registrationForm.get('DOB').touched)|| (registrationForm.get('DOB').dirty))}">
   <label class="reg" for="DOB">Date of Birth :  </label>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <input id="Date_Of_Birthtext" formControlName="DOB" type="text" class="reg1">
    <span *ngIf="registrationForm.get('DOB').errors && (registrationForm.get('DOB').touched|| registrationForm.get('DOB').dirty)">
      
@@ -51,9 +52,16 @@
    <div [ngClass]="{'has-error': registrationForm.get('PassWord').errors && ((registrationForm.get('PassWord').touched)|| (registrationForm.get('PassWord').dirty))}">
   
  <label class="Password" for="Password"> Password :  </label>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <input id="fullnamepassword" formControlName="PassWord" type="password" class="reg12"> 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input id="fullnamepassword" formControlName="PassWord" type="password" class="reg12" > 
    </div>
+   <br>
+   <br>
+   <div>
+   <label class="CPassword" for="CPassword">Confirm Password :  </label>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input id="cfpassword" formControlName="CPassWord" type="password" class="reg12">
+   </div> 
   <br>
   <br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

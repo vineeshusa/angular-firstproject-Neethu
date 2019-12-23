@@ -19,7 +19,8 @@ this.registrationForm= this.fb.group({
   FullName:['',[ Validators.required , Validators.minLength (3),Validators.maxLength(12)] ],
   email: ['',Validators.required],
   DOB:['',Validators.required],
-  PassWord:['',Validators.required]
+  PassWord:['',Validators.required],
+  CPassWord:['',Validators.required]
  
 }
 );

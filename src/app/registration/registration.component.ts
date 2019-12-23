@@ -17,9 +17,9 @@ save= function()
   
 this.registrationForm= this.fb.group({
   FullName:['',[ Validators.required , Validators.minLength (3),Validators.maxLength(12)] ],
-  email: [''],
-  DOB:[''],
-  PassWord:['']
+  email: ['',Validators.required],
+  DOB:['',Validators.required],
+  PassWord:['',Validators.required]
  
 }
 );

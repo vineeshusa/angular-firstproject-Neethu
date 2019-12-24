@@ -43,7 +43,7 @@ formErrors =
    {this.logValidationErrors(abstractControl)}
    else
    {this.formErrors[key]=''
-    if(abstractControl && ! abstractControl.valid)
+    if(abstractControl && ! abstractControl.valid && abstractControl.touched || abstractControl.dirty)
     {const Message=this.validationMessages[key];
       for (const errorkey in abstractControl.errors)
         {

@@ -29,7 +29,7 @@ formErrors =
   ngOnInit() {
     this.homeForm=this.fb.group({
       userName:['',[ Validators.required , Validators.minLength (5),Validators.maxLength(12)] ],
-  email: ['',Validators.required,Validators.minLength(5)]
+     PassWord: ['',Validators.required,Validators.minLength(5),Validators.maxLength(15)]
     });
     
     this.homeForm.valueChanges.subscribe((data)=>{this.logValidationErrors(this.homeForm)});
@@ -66,6 +66,8 @@ console.log(this.homeForm.touched);
 console.log(this.homeForm.controls.userName.value);
 console.log(this.homeForm.controls.userName.touched);
 console.log(this.homeForm.controls.PassWord.value);
+console.log(this.homeForm.controls.PassWord.touched);
+
 
   }
 }

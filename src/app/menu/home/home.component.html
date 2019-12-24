@@ -1,9 +1,9 @@
 
 <form [formGroup]="homeForm"(ngSubmit)="onSubmit()" class=form-reg>
- <div class="formuser" [ngClass]="{'has-error': formErrors.userName}>
+ <div class="formuser" [ngClass]="{'has-error': formErrors.userName}">
   <label class="home" for ="username">UserName :</label>
   &nbsp;&nbsp;&nbsp;
-<input id="username "type="text" formControlName="userName" class="home1">
+<input id="username "type="text" formControlName="userName" class="home1" (blur)="logValidationErrors()">
 <span class="formuser1" *ngIf="formErrors.userName">
   {{formErrors.userName}}
 </span>
@@ -11,11 +11,11 @@
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <button id="sign" (click)= clickedsign();>Sign In</button>
 <br>
-<div class="formuser" [ngClass]="{'has-error': formErrors.PassWord}>
-<label for="PassWord">Password :</label>
+<div class="formpass" [ngClass]="{'has-error': formErrors.PassWord}">
+<label class="passw"for="PassWord">Password :</label>
 &nbsp;&nbsp;&nbsp;&nbsp;
-<input type="password" id="password" formControlName="PassWord" class="passwd">
-<span class="formuser1" *ngIf="formErrors.PassWord">
+<input type="password" id="password" formControlName="PassWord" class="passwd" (blur)="logValidationErrors()">
+<span class="formpass" *ngIf="formErrors.PassWord">
   {{formErrors.PassWord}}
 </span>
  </div>
@@ -23,4 +23,4 @@
 <br>
 </form>
 
-  
+ 

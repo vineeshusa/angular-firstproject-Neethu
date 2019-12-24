@@ -61,8 +61,11 @@ formErrors =
   onSubmit():void
   
   {
-    console.log(this.homeForm.value);
+ console.log(this.homeForm.value);
 console.log(this.homeForm.touched);
+console.log(this.homeForm.controls.userName.value);
+console.log(this.homeForm.controls.userName.touched);
+console.log(this.homeForm.controls.PassWord.value);
 
   }
 }

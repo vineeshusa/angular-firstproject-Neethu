@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
 clickedsign=function()
 {
   alert("sign in")
+  
 }
   constructor(private fb:FormBuilder) {
 

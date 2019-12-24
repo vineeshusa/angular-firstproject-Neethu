@@ -9,6 +9,7 @@ export class RegistrationComponent implements OnInit {
 registrationForm : FormGroup;
 save= function()
 {alert("saved");
+
 }
 
   constructor(private fb: FormBuilder) { }

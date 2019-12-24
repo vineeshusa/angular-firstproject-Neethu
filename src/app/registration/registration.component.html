@@ -69,7 +69,7 @@
    <label class="CPassword" for="CPassWord">Confirm Password :  </label>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <input id="cfpassword" formControlName="CPassWord" type="password" class="reg12">
-  <span *ngIf="registrationForm.get('CPassWord').errors && (registrationForm.get('CPassWord').touched|| registrationForm.get('CPassWord').dirty)">
+  <span *ngIf="registrationForm.get('CPassWord').errors && (registrationForm.get('PassWord').touched|| registrationForm.get('CPassWord').dirty)">
      
        <span *ngIf="registrationForm.get('CPassWord').errors.required">
          <br>

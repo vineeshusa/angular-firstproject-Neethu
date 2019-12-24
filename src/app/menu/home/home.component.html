@@ -1,5 +1,6 @@
 
 <form [formGroup]="homeForm"(ngSubmit)="onSubmit()" class=form-reg>
+
  <div class="formuser" [ngClass]="{'has-error': formErrors.userName}">
   <label class="home" for ="username">UserName :</label>
   &nbsp;&nbsp;&nbsp;
@@ -19,7 +20,6 @@
   {{formErrors.PassWord}}
 </span>
  </div>
-<br>
 <br>
 </form>
 

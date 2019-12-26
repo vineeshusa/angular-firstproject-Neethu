@@ -16,7 +16,7 @@ import { DateComponent } from './date/date.component';
 import { CarComponent } from './car/car.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { DealsComponent } from './deals/deals.component';
-import {RestuatrentComponent} from './restuatrent/restuatrent';
+//import {RestuatrentComponent} from './restuatrent/restuatrent';
 const myPath : Routes =[
   {
     path : "hotels", component :HotelsComponent,
@@ -33,12 +33,12 @@ const myPath : Routes =[
   {path:"registration",component:RegistrationComponent
   },
   {path:"deals",component:DealsComponent},
-  {path:"restuarent",component:RestuatrentComponent}
+ // {path:"restuarent",component:RestuatrentComponent}
 ]
 @NgModule({
   imports:      [ BrowserModule, FormsModule,
   RouterModule.forRoot(myPath),ReactiveFormsModule ],
-  declarations: [ AppComponent, HelloComponent, MenuComponent, HomeComponent, HotelsComponent, FootrComponent, ImgComponent, HelpComponent, DateComponent, CarComponent, RegistrationComponent, DealsComponent, RestuatrentComponent ],
+  declarations: [ AppComponent, HelloComponent, MenuComponent, HomeComponent, HotelsComponent, FootrComponent, ImgComponent, HelpComponent, DateComponent, CarComponent, RegistrationComponent, DealsComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

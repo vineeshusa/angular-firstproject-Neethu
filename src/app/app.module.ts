@@ -16,9 +16,7 @@ import { DateComponent } from './date/date.component';
 import { CarComponent } from './car/car.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { DealsComponent } from './deals/deals.component';
-import { RestuatrentComponent } from './restuatrent/restuatrent.component';
-
-
+import {RestuatrentComponent} from './restuatrent/restuatrent';
 const myPath : Routes =[
   {
     path : "hotels", component :HotelsComponent,
